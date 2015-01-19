@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="cvStrap : cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>cvStrap</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/carlvlewis/cvStrap-jsonresume">View on GitHub</a>
+
+          <h1 id="project_title">cvStrap</h1>
+          <h2 id="project_tagline">cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/carlvlewis/cvStrap-jsonresume/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/carlvlewis/cvStrap-jsonresume/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="getting-started-with-cvstrap" class="anchor" href="#getting-started-with-cvstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started with cvStrap</h3>
+
+<p>Updating your CV/resume in an opinionated design environment pixel-by-pixel can get tedious. So, what better way to maintain your professional narrative than editing the simplest, most ubiquitous data format on the web, JSON? Using the <a href="http://jsonresume.org">JSONResume</a> schema, an initiative to create a JSON-based standard for resumes, and its command line interface tools, you can choose from dozens of <a href="http://registry.jsonresume.org/">gorgeous HTML themes in the registry</a> and export your resume.json file located in your home directory to PDF using one simple command (that is, as soon as you've installed the command line tool as detailed <a href="https://github.com/jsonresume/resume-cli">here</a>.) After you've installed the -cli via NPM, simply run the command:</p>
+
+<pre><code>$ resume export publish
+</code></pre>
+
+<p>If you want to implement the cvStrap theme that way, all you have to do is run one other command defining the theme you want to run.</p>
+
+<pre><code>$ resume export --theme cvStrap
+</code></pre>
+
+<p>And then boom, your new HTML or PDF cvStrapped resume will be available in your current working directory.</p>
+
+<h3>
+<a id="why-cvstrap" class="anchor" href="#why-cvstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why cvStrap?</h3>
+
+<p>The themes that fit my design specifications all required exact dates (of which I'm not aware) in the dd-mm-yyyy format. Otherwise, the <a href="https://github.com/jsonresume/resume-cli">-cli</a> wouldn't export them to HTML or PDF in the command line as it should, spitting back errors because the date formatting varied from the schema. Moreover, few, if any, had clearly defined, succinct print stylesheets. Although in developer circles, printing may be a thing of the past, I'm a developer in the <em>news</em> industry – which is still <strong>very much</strong> attached to the notion of having print copies of a candidate's resume.</p>
+
+<p>So, hence the inspiration was born to create my JSONResume-schema powered, Boostrap-based <a href="http://cv.carlvlewis.net">full academic CV</a>. Resize the browser window, print it, download it, do whatever--it all comes out gorgeously with page-breaks and navigation-buttons hidden. All URL indicators in the CSS have been disabled except when in a:hover state so that the HTML will look as close to the printed copy as possible.</p>
+
+<h3>
+<a id="automagically-exporting-your-linkedin-profile-into-the-json-resume-schema" class="anchor" href="#automagically-exporting-your-linkedin-profile-into-the-json-resume-schema" aria-hidden="true"><span class="octicon octicon-link"></span></a>Automagically exporting your LinkedIn profile into the JSON Resume schema:</h3>
+
+<p>Looking for a fast way to get your data into JSON? José Manuel Pérez's created a nifty <a href="http://jmperezperez.com/linkedin-to-json-resume/">LinkedIn to JSONResume converter</a> that I used.</p>
+
+<h3>
+<a id="changing-the-orderappearance-of-cvstrap" class="anchor" href="#changing-the-orderappearance-of-cvstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changing the order/appearance of cvStrap</h3>
+
+<p>You're free to restructure the order of the elements in the /json/resume.json file, so long as you do the same in the accompanying /json/schema.json file as well. You won't be able to run it in the command line but it'll still get the job done.</p>
+
+<h3>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h3>
+
+<p>Design and implementation by <a href="https://github.com/carlvlewis" class="user-mention">@carlvlewis</a>. Kudos also to <a href="https://github.com/jmperez" class="user-mention">@jmperez</a> for the Linkedin-to-JSONResume generator.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with cvStrap? Shoot me an email at <a href="mailto:hello@carlvlew.is">hello@carlvlew.is</a>.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">cvStrap maintained by <a href="https://github.com/carlvlewis">carlvlewis</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
