@@ -1,0 +1,241 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	background: #eee;
+	color: #222;
+	margin: 0;
+}
+.preload * {
+	transition: none !important;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	color: #8378aa;
+	text-decoration: none;
+}
+
+a:visited
+ {
+	color: #000!important;
+}
+
+.googlevoice a
+	{
+		text-decoration: none!important;
+	}
+	
+.googlevoice a:visited
+	{
+		color: #000000!important;
+	}
+
+label {
+	display: block;
+	font-weight: normal;
+	margin: 0;
+}
+input {
+	background: none;
+/*
+
+* Simple Bootstrap CV
+
+*
+
+* @carlvlewis
+
+*/
+
+
+
+body {
+
+  margin: 0;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 13px;
+
+  line-height: 18px;
+
+  color: #333333;
+
+  background-color: #fff;
+
+  margin-top:20px;
+
+  margin-bottom:10px;
+
+  overflow: -moz-scrollbars-vertical;
+
+  overflow: scroll;
+
+  overflow: -webkit-scrollbars-vertical;
+
+  overflow: -o-scrollbars-vertical;
+
+}
+
+.pageBreak {
+page-break-after: always!important; 
+page-break-inside: avoid!important;
+	}
+}
+
+.well {
+
+  background-color: #ffffff !important;
+
+  border: 1px solid #ddd !important;
+
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+
+  -webkit-border-radius: 0px !important;
+
+     -moz-border-radius: 0px !important;
+
+          border-radius: 0px !important;
+
+  -webkit-box-shadow: none !important;
+
+     -moz-box-shadow: none !important;
+
+          box-shadow: none !important;
+
+}
+
+
+
+.hero-unit {
+
+  padding: 30px !important;
+
+  margin-bottom: 30px !important;
+
+  background-color: #f4f4f4 !important;
+
+  -webkit-border-radius: 1px !important;
+
+     -moz-border-radius: 1px !important;
+
+          border-radius: 1px !important;
+
+}
+
+
+
+.hero-unit p {
+
+  font-size: 14px !important;
+
+  line-height: 22px !important;
+
+}
+
+
+
+.avatar{
+
+    border:1px solid #eee;
+
+    padding:5px;
+
+    margin:auto auto;
+
+    width:250px;
+
+    height:290px;
+
+}
+
+
+
+.avatar img{
+
+    display:block;
+
+    margin:auto auto;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+
+.bio{
+
+    width:250px;
+
+    margin:auto auto;
+
+    text-align:center;
+
+}
+
+
+
+.contact{
+
+    width:250px;
+
+    margin:10px auto;
+
+    text-align:right;
+
+}
+
+
+
+.button{
+
+    width:250px;
+
+    margin:20px auto 0 auto;
+
+    text-align:center;
+
+}
+
+
+
+.btn-resume{
+
+    padding: 8px 10px;
+
+}
+
+
+
+.no-radius{
+
+    border-radius:0 !important;
+
+    -moz-border-radius: 0 !important;
+
+    -o-border-radius: 0 !important;
+
+    -webkit-border-radius: 0 !important;
+
+}
+
+
+
+.header{
+
+    clear:both;
+
+}
+.page-break	{ display: block; }
+
+
+footer, footer p{
+ -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all; 
+}

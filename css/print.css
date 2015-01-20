@@ -1,0 +1,25 @@
+.noPrint{
+	display: none;
+	}
+.button {display: none;}
+
+.pageBreak {
+page-break-after: always!important; 
+page-break-before: avoid!important;
+float:none;
+	}
+}
+
+
+
+body {
+	  line-height: 14px;
+	  font-size: 11px;
+
+}
+
+
+.icon-plus-sign {
+  display:list-item;
+}''[===
+
