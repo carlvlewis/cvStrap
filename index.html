@@ -36,12 +36,12 @@
 
 <p>Updating your CV/resume in an opinionated design environment pixel-by-pixel can get tedious. So, what better way to maintain your professional narrative than editing the simplest, most ubiquitous data format on the web, JSON? Using the <a href="http://jsonresume.org">JSONResume</a> schema, an initiative to create a JSON-based standard for resumes, and its command line interface tools, you can choose from dozens of <a href="http://registry.jsonresume.org/">gorgeous HTML themes in the registry</a> and export your resume.json file located in your home directory to PDF using one simple command (that is, as soon as you've installed the command line tool as detailed <a href="https://github.com/jsonresume/resume-cli">here</a>.) After you've installed the -cli via NPM, simply run the command:</p>
 
-<pre><code>$ resume export publish
+<pre><code>$ resume export resume.pdf
 </code></pre>
 
 <p>If you want to implement the cvStrap theme that way, all you have to do is run one other command defining the theme you want to run.</p>
 
-<pre><code>$ resume export --theme cvStrap
+<pre><code>$ resume export resume.pdf --theme cvStrap
 </code></pre>
 
 <p>And then boom, your new HTML or PDF cvStrapped resume will be available in your current working directory.</p>
