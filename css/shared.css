@@ -18,7 +18,7 @@ body {
 
   overflow: -moz-scrollbars-vertical;
 
-  overflow: scroll;
+  overflow: hidden;
 
   overflow: -webkit-scrollbars-vertical;
 
