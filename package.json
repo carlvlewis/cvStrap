@@ -1,0 +1,21 @@
+{
+  "name": "jsonresume-theme-cvstrap",
+  "version": "0.0.0",
+  "description": "cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlvlewis/cvStrap.git"
+  },
+  "author": "Carl V. Lewis <hello@carlvlew.is> (https://github.com/carlvlewis)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlvlewis/cvStrap/issues"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}
