@@ -29,8 +29,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     <link href="css/bootstrap.css" rel="stylesheet">
 
-
-
     <link href="css/shared.css" rel="stylesheet">
       <link href="css/screen.css" rel="stylesheet" media="screen">
         <link href="css/print.css" rel="stylesheet" media="print">
@@ -53,9 +51,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   </head>
 
 
-
-  <body>
-    <div class="container">
+   <div class="container">
 
       <div class="row">
 
@@ -112,12 +108,36 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 <div class="button no-display" id="nodisp">
 
                     <p><a class="btn no-radius btn-resume no-display" id="printi" href="javascript:void(0);" onClick="var printButton = document.getElementById('nodisp');printButton.style.visibility = 'hidden';window.print();printButton.style.visibility = 'visible';return false; "><i class="icon-print"></i> Print</a> 
-<!-- The JS below uses PDFSpot's converter to convert the current page to a PDF for download as a PDF, with all print stylesheets. So when you change the JSON, no need to change out the PDF! -->
-                        <a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href) + '&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a>   <a class="btn no-radius btn-resume no-display" href="http://carlvlewis.s3.amazonaws.com/iVcard.vcf" class="btn"><i class="icon-user"></i> vCard</a>
+
+                       
+
+          
+                    <!-- The JS below uses PDFSpot's converter to convert the current page to a PDF for download as a PDF, with all print stylesheets. So when you change the JSON, no need to change out the PDF! -->   
+                        <a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href) + '&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a>                         <!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn no-radius btn-resume" size="large" data-toggle="modal"><i class="icon-user"></i> About</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">About this Project</h3>
+  </div>
+  <div class="modal-body">
+    <p>This CV template was coded by <strong><a href="http://carlvlew.is">Carl V. Lewis</a></strong>, and is based on the <strong><a href="http://getbootstrap.com" target="_blank">Bootstrap 2.0</a></strong> framework, with responsive viewports and print-optimized CSS stylesheets added. It is also structured in line with the <strong><a href="http://jsonresume.org" target="_blank">JSON Resume</a></strong> schema, an open-source initiative to create a JSON standard for resumes. The  document is populated by a <strong><a href="json/resume.json" target="_blank">single JSON file</a></strong>, and all hyperlinks are set to "text-decoration: none" so that they appear the same in print as they do on screen, while still taking a user to a relevant URL.</p>
+    <p>The entire project has been open-sourced <strong><a href="http://github.com/carlvlewis/cvStrap-jsonresume">here</a></strong> on Github for you to use, fork or contribute.</p>
+    <br>
+    <h6>C. 2015 Carl V. Lewis. MIT License.</h6>
+    
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>  <!--<a class="btn no-radius btn-resume no-display" href="http://carlvlewis.s3.amazonaws.com/iVcard.vcf" class="btn"><i class="icon-user"></i> vCard</a>-->
 
                         <!--<a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape('http://<?php $val=explode("/",$_SERVER['REQUEST_URI']);echo $_SERVER['HTTP_HOST'].$val[1]; ?>/myCV.html')+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a> 
 
-                    <!--<a class="btn no-radius btn-resume no-display" href="#"><i class="icon-list-alt"></i> vCard</a></p>
+
+          <!--<a class="btn no-radius btn-resume no-display" href="#"><i class="icon-list-alt"></i> vCard</a></p>
 -->
                 </div> <!--/button -->
 
@@ -167,7 +187,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                       
                     
 <!-- /ko --> <!-- ko if: courses_taught().length > 0-->
-<div class="page-break"><br></div>
+
                       <h5>Courses Taught:</h5><ul data-bind="foreach: courses_taught"><li><span data-bind="text: coutau"></span></li></ul>
 <!-- /ko -->
 <!-- ko if: courses_developed().length > 0-->					  
@@ -409,8 +429,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </div>
 
 <footer><center>
-       <p><i class="icon-home"></i><span data-bind="text: address"></span>&nbsp;&nbsp;<i class="icon-map-marker"></i><span data-bind="text: location"></span>&nbsp;&nbsp;<i class="icon-signal"></i> <span data-bind="text: phone"></span>&nbsp;&nbsp;<i class="icon-globe"></i> <a data-bind="attr: { href: website}"><span data-bind="text: website"></span></a>&nbsp;&nbsp;<i class="icon-envelope"></i><span data-bind="text: email"></span></p>
-</center>  </div><em><p><center>Click <a href="http://carlvlewis.github.io/cvStrap-jsonresume"><strong>here</strong></a> to read about how I built this CV. Data nerd? Click <strong><a href="json/resume.json"">here</a></strong> to view the JSON data that populated this document.</center></p></em>
+       <p><i class="icon-home"></i><span data-bind="text: address"></span>,&nbsp;<span data-bind="text: location"></span>&nbsp;&nbsp;<i class="fa fa-phone"></i> <span data-bind="text: phone"></span>&nbsp;&nbsp;<i class="fa fa-globe"></i> <a data-bind="attr: { href: website}"><span data-bind="text: website"></span></a>&nbsp;&nbsp;<i class="fa fa-envelope"></i> <span data-bind="text: email"></span></p>
+</center>  </div><div class="noPrint"><em><p><center>Click <a href="http://carlvlewis.github.io/cvStrap-jsonresume"><strong>here</strong></a> to read about how I built this CV. Data nerd? Click <strong><a href="json/resume.json"">here</a></strong> to view the JSON data that populated this document.</center></p></em></div>
       </footer>
 
 
