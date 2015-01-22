@@ -18,8 +18,8 @@ body {
 
   overflow: -moz-scrollbars-vertical;
 
-  overflow: hidden;
-
+overflow-y: scroll;
+overflow-x: hidden;
   overflow: -webkit-scrollbars-vertical;
 
   overflow: -o-scrollbars-vertical;
@@ -47,6 +47,7 @@ body {
      -moz-border-radius: 0px !important;
 
           border-radius: 0px !important;
+          
 
   -webkit-box-shadow: none !important;
 

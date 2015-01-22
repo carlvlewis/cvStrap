@@ -73,8 +73,8 @@ body {
 
   overflow: -moz-scrollbars-vertical;
 
-  overflow: scroll;
-
+overflow-y: scroll;
+overflow-x: hidden;
   overflow: -webkit-scrollbars-vertical;
 
   overflow: -o-scrollbars-vertical;
