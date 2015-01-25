@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--Copyright (c) 2015 Carl V. Lewis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.-->
+
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Carl V. Lewis - Curriculum Vitae</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="format-detection" content="telephone=no">
+	
+    <meta name="description" content="Classic Bootstrap, Print-Ready, Minimalist CV/Resume">
+
+    <meta name="author" content="Carl V. Lewis">
+
+
+    <!-- Styles -->
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/shared.css" rel="stylesheet">
+      <link href="css/screen.css" rel="stylesheet" media="screen">
+        <link href="css/print.css" rel="stylesheet" media="print">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+
+    <!--[if lt IE 9]>
+
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+
+  </head>
+
+
+   <div class="container">
+
+      <div class="row">
+
+        <div class="span4">
+
+			<div class="well">
+
+                <div class="avatar">
+
+                    <img width="300" height="400" alt="image" data-bind="attr:{src: imagePath}" />
+
+                </div><!--/avatar -->
+
+                <br class="clearfix" />
+
+                
+
+                <div class="bio">
+
+                    <h1 data-bind="text: name"></h1>
+
+                    <em><p data-bind="text: label"/></p></em>
+
+                </div><!--/bio -->
+
+                <br class="clearfix" />
+
+                
+
+                <div class="contact">
+
+                    <p><span data-bind="text: address"></span>  <i class="fa fa-home"></i></p>
+
+					<p><span data-bind="text: location"></span>  <i class="fa fa-map-marker"></i></p>
+					<!--This next span class forces Chrome to disable phone number hyperlinking-->
+					<p><span class="googlevoice" data-bind="text: phone"></span>  <i class="fa fa-mobile"></i></p>
+
+					<p><a data-bind="attr: { href: website}"><span data-bind="text: website"></span></a>  <i class="fa fa-globe"></i></p>
+                                        
+                                        <p><a style="margin-right:3px;" data-bind="attr: { href: mailto},text: email"></a><i class="fa fa-envelope"></i></p>
+					
+                </div><!--/contact -->
+
+<!-- ko if: profile().length > 0-->
+                <div class="profiles" data-bind="foreach: profile" style="margin-bottom: 15px;text-align:right;">
+
+                    <p><a style="margin-right:3px;" data-bind="attr: { href: profilelink},text: profilename"></a><i data-bind="attr: {class: network}"></i></p>
+
+                </div>
+                <!--/profiles -->
+<!-- /ko -->
+                <div class="button no-display" id="nodisp">
+
+                    <p><a class="btn no-radius btn-resume no-display" id="printi" href="javascript:void(0);" onClick="var printButton = document.getElementById('nodisp');printButton.style.visibility = 'hidden';window.print();printButton.style.visibility = 'visible';return false; "><i class="icon-print"></i> Print</a> 
+
+                       
+
+          
+                    <!-- The JS below uses PDFSpot's converter to convert the current page to a PDF for download as a PDF, with all print stylesheets. So when you change the JSON, no need to change out the PDF! -->   
+                        <a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape(location.href) + '&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a>                         <!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn no-radius btn-resume" size="large" data-toggle="modal"><i class="icon-user"></i> About</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">About this Project</h3>
+  </div>
+  <div class="modal-body">
+    <p>This CV template was coded by <strong><a href="http://carlvlew.is">Carl V. Lewis</a></strong>, and is based on the <strong><a href="http://getbootstrap.com" target="_blank">Bootstrap 2.0</a></strong> framework, with responsive viewports and print-optimized CSS stylesheets added. It is also structured in line with the <strong><a href="http://jsonresume.org" target="_blank">JSON Resume</a></strong> schema, an open-source initiative to create a JSON standard for resumes. The  document is populated by a <strong><a href="json/resume.json" target="_blank">single JSON file</a></strong>, and all hyperlinks are set to "text-decoration: none" so that they appear the same in print as they do on screen, while still taking a user to a relevant URL.</p>
+    <p>The entire project has been open-sourced <strong><a href="http://github.com/carlvlewis/cvStrap">here</a></strong> on Github for you to use, fork or contribute.</p>
+    <br>
+    <h6>C. 2015 Carl V. Lewis. MIT License.</h6>
+    
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>  <!--<a class="btn no-radius btn-resume no-display" href="http://carlvlewis.s3.amazonaws.com/iVcard.vcf" class="btn"><i class="icon-user"></i> vCard</a>-->
+
+                        <!--<a class="btn no-radius btn-resume no-display" href="javascript:void(location.href='http://www.pdfspot.com/html-to-pdf-converter.aspx?url=' + escape('http://<?php $val=explode("/",$_SERVER['REQUEST_URI']);echo $_SERVER['HTTP_HOST'].$val[1]; ?>/myCV.html')+'&pdf_name=' + escape('') + '&pdf_orientation=portrait&pdf_page_size=A4&scripts_enabled=true' )"><i class="icon-download-alt"></i> Download</a> 
+
+
+          <!--<a class="btn no-radius btn-resume no-display" href="#"><i class="icon-list-alt"></i> vCard</a></p>
+-->
+                </div> <!--/button -->
+
+                
+
+			</div><!--/.well -->
+
+        </div><!--/span-->
+
+        
+
+        <div class="span8">
+
+          <div class="hero-unit">
+
+            <p data-bind="text: summary"></p>
+
+		  </div>
+
+		  
+<!-- ko if: education().length > 0-->
+		  <div class="header">
+
+			<h2>Education</h2>
+
+<hr />
+
+		  </div>
+
+
+                    <div class="row-fluid" data-bind="foreach: education">
+
+                    <div class="span6">
+
+                        <i class="fa fa-university" style="float: left; margin-right:5px;">  </i>  <h4 data-bind="text: area"></h4>
+
+                      <p><span data-bind="text: institution"></span><span data-bind="text: startend" style="float: right;"></span></p>
+<!-- ko if: gpa > 0 -->
+                      <p data-bind="if: gpa">GPA: <em><span data-bind="text: gpa"> </span></em></p>
+<!-- /ko -->
+                      <em><p data-bind="text: recommendations"></p></em>
+<!-- ko if: edusummary().length > 0-->
+                      <ul data-bind="foreach: edusummary"><li><span data-bind="text: edusum"></span></li></ul>
+<!-- /ko -->
+                      <!-- ko if: children().length > 0-->
+                      <h5>Courses:</h5><ul data-bind="foreach: children"><li><span data-bind="text: courses"></span></li></ul>
+                      
+                    
+<!-- /ko --> <!-- ko if: courses_taught().length > 0-->
+
+                      <h5>Courses Taught:</h5><ul data-bind="foreach: courses_taught"><li><span data-bind="text: coutau"></span></li></ul>
+<!-- /ko -->
+<!-- ko if: courses_developed().length > 0-->					  
+                      <h5>Courses Developed:</h5><ul data-bind="foreach: courses_developed"><li><span data-bind="text: coudev"></span></li></ul>
+<!-- /ko -->					  
+<!-- ko if: courses_percepted().length > 0-->
+                      <h5>Course Preceptor:</h5><ul data-bind="foreach: courses_percepted"><li><span data-bind="text: couper"></span></li></ul>
+<!-- /ko -->
+                    </div><!--/span-->
+                    <br>
+                    </div>
+
+<!-- /ko -->            
+<!-- ko if: work().length > 0-->
+                  <div class="header">
+
+			<h2>Work Experience</h2>
+
+			<hr />
+
+		  </div>
+
+                    <div class="row-fluid" data-bind="foreach: work">
+
+                    <div class="span6">
+
+                      <i class="fa fa-plus" style="float: left;margin:5px; padding-top:2px; padding-right:3px;"></i><h4 data-bind="text: company"></h4>
+
+                      <p><span data-bind="text: position"></span><span data-bind="text: workstart" style="float: right;"></span></p>
+
+                      <!-- ko if: highlights().length > 0--><ul data-bind="foreach: highlights"><li><span data-bind="text: highlight"></span></li></ul><!-- /ko --> 
+
+                    </div><!--/span-->
+
+                    </div>
+<!-- /ko -->					
+<!-- ko if: awards().length > 0-->
+		  <div class="header">
+
+			<h2>Awards</h2>
+
+			<hr />
+
+		  </div>
+
+                    <div class="row-fluid" data-bind="foreach: awards">
+
+                      <div class="span6">
+
+                      <i class="fa fa-trophy" style="float: left; margin-right:5px"></i><h4 data-bind="text: title"></h4>
+
+                      <p><span data-bind="text: awarder"></span><span data-bind="text: awardstart" style="float: right;"></span></p>
+
+                      <!-- ko if: awardsummary !== '' --><ul><li><span data-bind="text: awardsummary"></span></li></ul><!-- /ko --> 
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->				
+<!-- ko if: talks().length > 0-->
+                  <div class="header">
+
+			<h2>Talks, Presentations, Workshops</h2>
+
+			<hr />
+
+		  </div>
+
+                    <div class="row-fluid" data-bind="foreach: talks">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left; margin-right:5px"></i><h4 data-bind="text: talk_title"></h4>
+
+                      <p data-bind="text: talk_summary"></p> 
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->
+<!-- ko if: publishers().length > 0-->                  
+		  <div class="header">
+
+			<h2>Publications</h2>
+
+			<hr />
+
+		  </div>
+
+		    <div class="row-fluid" data-bind="foreach: publishers">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left;margin:5px;"></i><h4 data-bind="text: pub_name"></h4>
+
+                          <p><span data-bind="text: publisher" style="width: 100px;"></span><span data-bind="text: reldate" style="width: 100px;float: right;"></span></p>
+
+                          <a data-bind="attr: { href: pub_web}"><p data-bind="text: pub_web"></p></a>
+
+                      <p data-bind="text: pub_summary"></p> 
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->					
+<!-- ko if: skills().length > 0--> 
+                  <div class="header">
+
+			<h2>Skills</h2>
+
+			<hr />
+
+		  </div>
+
+		    <div class="row-fluid" data-bind="foreach: skills">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left;margin:5px;"></i><h4 data-bind="text:skill_name"></h4>
+
+                          <p><span data-bind="text:level"></span></p>
+
+                          <!-- ko if: skill().length > 0--><ul data-bind="foreach: skill"><li><span data-bind="text: skill_key"></span></li></ul><!-- /ko --> 
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->  
+<!-- ko if: prof().length > 0-->                    
+                  <div class="header">
+
+			<h2>Professional Affiliations</h2>
+
+			<hr />
+
+		  </div>
+
+		  <div class="row-fluid" data-bind="foreach: prof">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left; margin-right:5px"></i><h4 data-bind="text: profname"></h4>
+
+                          <p data-bind="text: proflevel"></p>
+
+                          <!-- ko if: profkey().length > 0--> <ul data-bind="foreach: profkey"><li><span data-bind="text :keywordpro"></span></li></ul><!-- /ko -->
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->  
+<!-- ko if: interest().length > 0-->
+                  <div class="header">
+
+			<h2>Interests</h2>
+
+			<hr />
+
+		  </div>
+
+		   <div class="row-fluid" data-bind="foreach: interest">
+
+                      <div class="span6">
+
+                          <span data-bind="text: keyint"></span>
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->   
+<!-- ko if: community().length > 0-->
+                  <div class="header">
+
+			<h2>Community and Academic Service</h2>
+
+			<hr />
+
+		  </div>
+
+		 
+                    <div class="row-fluid" data-bind="foreach: community">
+
+                      <div class="span6">
+
+                          <!-- ko if: commsumm().length > 0--><ul data-bind="foreach: commsumm"><li><span data-bind="text: commsummary"></span></li></ul><!-- /ko -->     
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->   					
+<!-- ko if: projects().length > 0-->
+
+                                   <div class="header">
+
+			<h2>Projects</h2>
+
+			<hr />
+
+		  </div>
+
+                    <div class="row-fluid" data-bind="foreach: projects">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left;margin:5px;"></i><h4 data-bind="text: projname"></h4>
+
+                      <p data-bind="text: desc"></p>
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->                    
+<!-- ko if: references().length > 0-->           
+                 <div class="header">
+
+			<h2>References</h2>
+
+			<hr />
+
+		  </div>
+
+
+                    <div class="row-fluid" data-bind="foreach: references">
+
+                      <div class="span6">
+
+                          <i class="fa fa-plus" style="float: left;margin:5px;"></i><h4 data-bind="text: refname"></h4><blockquote>
+<em><smaller><p data-bind="text: reff"></p></blockquote></em></smaller>
+                          
+
+                    </div><!--/span-->
+
+                    </div><!--/row-->
+<!-- /ko -->
+
+      <hr />
+</div>
+</div>
+</div>
+
+<footer><center>
+       <p><i class="icon-home"></i><span data-bind="text: address"></span>,&nbsp;<span data-bind="text: location"></span>&nbsp;&nbsp;<i class="fa fa-phone"></i> <span data-bind="text: phone"></span>&nbsp;&nbsp;<i class="fa fa-globe"></i> <a data-bind="attr: { href: website}"><span data-bind="text: website"></span></a>&nbsp;&nbsp;<i class="fa fa-envelope"></i> <span data-bind="text: email"></span></p>
+</center>  </div><div class="noPrint"><em><p><center>Click <a href="http://carlvlewis.github.io/cvStrap-jsonresume"><strong>here</strong></a> to read about how I built this CV. Data nerd? Click <strong><a href="json/resume.json"">here</a></strong> to view the JSON data that populated this document.</center></p></em></div>
+      </footer>
+
+
+
+
+    <!--Time for some JavaScript-->
+
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/knockout-3.2.0.js"></script>
+
+    <script src="js/myCV.js"></script>
+        
+
+  </body>
+
+</html>

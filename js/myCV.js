@@ -10,6 +10,7 @@ function Person(data) {
     self.phone = ko.observable(data.basics.phone);
     self.website = ko.observable(data.basics.website);
     self.email = ko.observable(data.basics.email);
+    self.mailto = ko.observable("mailto:"+data.basics.email);
     self.summary = ko.observable(data.basics.summary);
     
     
@@ -19,8 +20,9 @@ function Person(data) {
     
     for (var i = 0; i < profilearray().length; i++) {
         profile.push({ 
-            profilename:data.basics.profiles[i].network, 
-            profilelink: data.basics.profiles[i].url
+            profilename:data.basics.profiles[i].username, 
+            profilelink: data.basics.profiles[i].url,
+            network: "fa fa-"+data.basics.profiles[i].network
         });
     
     }

@@ -3,7 +3,7 @@
     "name": "Carl V. Lewis",
     "label": "Data Journalist, Mobile Developer, Digital Educator",
     "picture": "img/avatar.png",
-    "email": "carl@carlvlewis.net",
+    "email": "hello@carlvlew.is",
     "phone": "+1 (912) 816-7007",
     "website": "http://carlvlewis.net",
     "summary": "A post-platform journalist, web developer, design thinker, product manager, interaction designer, digital media educator and data visualization developer with more than 7 years of experience in data journalism, news graphics, newsroom interactive storytelling, curriculum design, digital publishing, homepage editing, product management, media entrepreneurship, digital strategy/social media management, mobile front-end design/development, interaction programming and Wordpress/Drupal content management development.",
@@ -16,19 +16,24 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "twitter",
         "username": "@carlvlewis",
         "url": "http://twitter.com/carlvlewis"
       },
       {
-        "network": "Github",
+        "network": "github",
         "username": "@carlvlewis",
         "url": "http://github.com/carlvlewis"
       },
       {
-        "network": "LinkedIn",
+        "network": "linkedin",
         "username": "/in/carlvlewis",
         "url": "http://linkedin.com/in/carlvlewis"
+      },
+      {
+        "network": "slideshare",
+        "username": "@carlvlewis",
+        "url": "http://slideshare.com/carlvlewis"
       }
     ]
   },
@@ -542,7 +547,7 @@
     },
     {
       "title": "Storm Guide by savannahnow.com and Georgia Power",
-      "description": "For the 2013 hurricane season, I built a native iOS and Android app with an accompanying HTML5 mobile site to tie in with the print edition of our annual “Hurricane Guide” sponsored by Georgia Power. Sponsorship netted $30,000 in new revenue for company."
+      "description": "For the 2013 hurricane season, I built a native iOS and Android app with an accompanying HTML5 mobile site to tie in with the print edition of our annual “Hurricane Guide�? sponsored by Georgia Power. Sponsorship netted $30,000 in new revenue for company."
     },
     {
       "title": "Interactive: Who are the biggest polluters in Georgia – and why?",
