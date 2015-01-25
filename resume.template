@@ -14,7 +14,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     <meta charset="utf-8">
 
-    <title>Carl V. Lewis - Curriculum Vitae</title>
+    <title>cvStrap - A professional, clean, Boostrap 2.0 dual print and HTML template for JSONResume schema</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -90,17 +90,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					<p><span class="googlevoice" data-bind="text: phone"></span>  <i class="fa fa-mobile"></i></p>
 
 					<p><a data-bind="attr: { href: website}"><span data-bind="text: website"></span></a>  <i class="fa fa-globe"></i></p>
-                                        
-                                        <p><a style="margin-right:3px;" data-bind="attr: { href: mailto},text: email"></a><i class="fa fa-envelope"></i></p>
-					
+
+					<p><a href="mailto: hello@carlvlew.is">hello@carlvlew.is  <i class="fa fa-envelope"></i></p></a>
+<p><a href="http://twitter.com/carlvlewis">@carlvlewis  <i class="fa fa-twitter"></i></p></a>
+
+<p><a href="http://github.com/carlvlewis">@carlvlewis  <i class="fa fa-github"></i></p></a>
+
+<p><a href="http://linkedin.com/in/carlvlewis">/in/carlvlewis  <i class="fa fa-linkedin"></i></p></a>
+<p><a href="http://slideshare.com/carlvlewis"> @carlvlewis <i class="fa fa-slideshare"> </i></p></a>
+
                 </div><!--/contact -->
 
+                <br class="clearfix" />
 <!-- ko if: profile().length > 0-->
-                <div class="profiles" data-bind="foreach: profile" style="margin-bottom: 15px;text-align:right;">
-
-                    <p><a style="margin-right:3px;" data-bind="attr: { href: profilelink},text: profilename"></a><i data-bind="attr: {class: network}"></i></p>
-
-                </div>
                 <!--/profiles -->
 <!-- /ko -->
                 <div class="button no-display" id="nodisp">
