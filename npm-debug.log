@@ -1,26 +1,139 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'init' ]
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   'jsonresume-theme-cvstrap' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 silly package data undefined
-5 info init written successfully
-6 error Error: Invalid name: "npm publihs ./"
-6 error     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
-6 error     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-6 error     at Array.forEach (native)
-6 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-6 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-6 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-6 error     at serverjs_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:176:43)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:172:33
-6 error     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:16:25)
-7 error If you need help, you may report this *entire* log,
-7 error including the npm and node versions, at:
-7 error     <http://github.com/npm/npm/issues>
-8 error System Darwin 14.0.0
-9 error command "node" "/usr/local/bin/npm" "init"
-10 error cwd /Users/carlvlewis/cvStrap
-11 error node -v v0.10.35
-12 error npm -v 1.4.28
-13 verbose exit [ 1, true ]
+4 verbose publish [ 'jsonresume-theme-cvstrap' ]
+5 verbose cache add [ 'jsonresume-theme-cvstrap', null ]
+6 verbose cache add name=undefined spec="jsonresume-theme-cvstrap" args=["jsonresume-theme-cvstrap",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'jsonresume-theme-cvstrap',
+7 verbose parsed url   path: 'jsonresume-theme-cvstrap',
+7 verbose parsed url   href: 'jsonresume-theme-cvstrap' }
+8 silly lockFile 26f4d650-jsonresume-theme-cvstrap jsonresume-theme-cvstrap
+9 verbose lock jsonresume-theme-cvstrap /Users/carlvlewis/.npm/26f4d650-jsonresume-theme-cvstrap.lock
+10 silly lockFile 26f4d650-jsonresume-theme-cvstrap jsonresume-theme-cvstrap
+11 silly lockFile 26f4d650-jsonresume-theme-cvstrap jsonresume-theme-cvstrap
+12 verbose addNamed [ 'jsonresume-theme-cvstrap', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 33196c10-jsonresume-theme-cvstrap jsonresume-theme-cvstrap@
+15 verbose lock jsonresume-theme-cvstrap@ /Users/carlvlewis/.npm/33196c10-jsonresume-theme-cvstrap.lock
+16 silly addNameRange { name: 'jsonresume-theme-cvstrap', range: '*', hasData: false }
+17 verbose request where is /jsonresume-theme-cvstrap
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id d645453bec37c6ba
+20 verbose url raw /jsonresume-theme-cvstrap
+21 verbose url resolving [ 'https://registry.npmjs.org/', './jsonresume-theme-cvstrap' ]
+22 verbose url resolved https://registry.npmjs.org/jsonresume-theme-cvstrap
+23 verbose request where is https://registry.npmjs.org/jsonresume-theme-cvstrap
+24 info trying registry request attempt 1 at 01:54:17
+25 verbose etag "3SMY2D3GWF013RUCPU33WS6J0"
+26 http GET https://registry.npmjs.org/jsonresume-theme-cvstrap
+27 http 304 https://registry.npmjs.org/jsonresume-theme-cvstrap
+28 silly registry.get cb [ 304,
+28 silly registry.get   { date: 'Fri, 30 Jan 2015 06:54:19 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     'last-modified': 'Fri, 30 Jan 2015 06:54:19 GMT',
+28 silly registry.get     'cache-control': 'max-age=60',
+28 silly registry.get     etag: '"3SMY2D3GWF013RUCPU33WS6J0"',
+28 silly registry.get     age: '39',
+28 silly registry.get     'x-served-by': 'cache-iad2138-IAD',
+28 silly registry.get     'x-cache': 'HIT',
+28 silly registry.get     'x-cache-hits': '1',
+28 silly registry.get     'x-timer': 'S1422600859.160505,VS0,VE0',
+28 silly registry.get     vary: 'Accept',
+28 silly registry.get     'content-length': '0',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 verbose etag https://registry.npmjs.org/jsonresume-theme-cvstrap from cache
+30 silly addNameRange number 2 { name: 'jsonresume-theme-cvstrap', range: '*', hasData: true }
+31 silly addNameRange versions [ 'jsonresume-theme-cvstrap', [ '0.0.1', '0.0.2', '0.0.3' ] ]
+32 verbose addNamed [ 'jsonresume-theme-cvstrap', '0.0.3' ]
+33 verbose addNamed [ '0.0.3', '0.0.3' ]
+34 silly lockFile 1cf34103-jsonresume-theme-cvstrap-0-0-3 jsonresume-theme-cvstrap@0.0.3
+35 verbose lock jsonresume-theme-cvstrap@0.0.3 /Users/carlvlewis/.npm/1cf34103-jsonresume-theme-cvstrap-0-0-3.lock
+36 silly lockFile 1cf34103-jsonresume-theme-cvstrap-0-0-3 jsonresume-theme-cvstrap@0.0.3
+37 silly lockFile 1cf34103-jsonresume-theme-cvstrap-0-0-3 jsonresume-theme-cvstrap@0.0.3
+38 silly lockFile 33196c10-jsonresume-theme-cvstrap jsonresume-theme-cvstrap@
+39 silly lockFile 33196c10-jsonresume-theme-cvstrap jsonresume-theme-cvstrap@
+40 silly publish { name: 'jsonresume-theme-cvstrap',
+40 silly publish   version: '0.0.3',
+40 silly publish   description: 'cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.',
+40 silly publish   main: 'index.js',
+40 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+40 silly publish   repository:
+40 silly publish    { type: 'git',
+40 silly publish      url: 'https://github.com/carlvlewis/cvStrap.git' },
+40 silly publish   author:
+40 silly publish    { name: 'Carl V. Lewis',
+40 silly publish      email: 'hello@carlvlew.is',
+40 silly publish      url: 'https://github.com/carlvlewis' },
+40 silly publish   license: 'MIT',
+40 silly publish   bugs: { url: 'https://github.com/carlvlewis/cvStrap/issues' },
+40 silly publish   dependencies: { handlebars: '^2.0.0-alpha.4' },
+40 silly publish   homepage: 'https://github.com/carlvlewis/cvStrap',
+40 silly publish   devDependencies: {},
+40 silly publish   keywords: [ 'jsonresume' ],
+40 silly publish   readme: '# cvStrap-jsonresume\ncvStrap is a classic, clean, professional theme for the [JSONResume](https://github.com/jsonresume) schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.\n\n##### A [demo](http://cv.carlvlewis.net) of cvStrap in action.\n##### Working [documentation](http://carlvlewis.github.io/cvStrap/) for using cvStrap.\n\n### Further support/questions/contributions?\nShoot me an email at hello@carlvlew.is or tweet me at @[carlvlewis](http://twitter.com/carlvlewis). Any and all contributions welcome -- just issue a pull request!\n\n',
+40 silly publish   readmeFilename: 'README.md',
+40 silly publish   gitHead: 'bbdf24f3176d4415b1c66b24c770644a884d4647',
+40 silly publish   _id: 'jsonresume-theme-cvstrap@0.0.3',
+40 silly publish   _shasum: '17a1ba4a8519ea8cbf342bc9f059037e6a43636d',
+40 silly publish   _from: 'jsonresume-theme-cvstrap@' }
+41 info prepublish jsonresume-theme-cvstrap@0.0.3
+42 verbose request where is /jsonresume-theme-cvstrap
+43 verbose request registry https://registry.npmjs.org/
+44 verbose url raw /jsonresume-theme-cvstrap
+45 verbose url resolving [ 'https://registry.npmjs.org/', './jsonresume-theme-cvstrap' ]
+46 verbose url resolved https://registry.npmjs.org/jsonresume-theme-cvstrap
+47 verbose request where is https://registry.npmjs.org/jsonresume-theme-cvstrap
+48 info trying registry request attempt 1 at 01:54:17
+49 http PUT https://registry.npmjs.org/jsonresume-theme-cvstrap
+50 http 403 https://registry.npmjs.org/jsonresume-theme-cvstrap
+51 verbose headers { date: 'Fri, 30 Jan 2015 06:54:20 GMT',
+51 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+51 verbose headers   'content-type': 'application/json',
+51 verbose headers   'cache-control': 'max-age=60',
+51 verbose headers   'content-length': '3353',
+51 verbose headers   'accept-ranges': 'bytes',
+51 verbose headers   via: '1.1 varnish',
+51 verbose headers   'x-served-by': 'cache-iad2125-IAD',
+51 verbose headers   'x-cache': 'MISS',
+51 verbose headers   'x-cache-hits': '0',
+51 verbose headers   'x-timer': 'S1422600859.411376,VS0,VE1041',
+51 verbose headers   'keep-alive': 'timeout=10, max=50',
+51 verbose headers   connection: 'Keep-Alive' }
+52 error publish Failed PUT 403
+53 error Error: forbidden cannot modify pre-existing version: 0.0.3
+53 error old={"name":"jsonresume-theme-cvstrap","version":"0.0.3","description":"cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/carlvlewis/cvStrap.git"},"author":{"name":"Carl V. Lewis","email":"hello@carlvlew.is","url":"https://github.com/carlvlewis"},"license":"MIT","bugs":{"url":"https://github.com/carlvlewis/cvStrap/issues"},"dependencies":{"handlebars":"^2.0.0-alpha.4"},"homepage":"https://github.com/carlvlewis/cvStrap","devDependencies":{},"keywords":["jsonresume"],"gitHead":"bbdf24f3176d4415b1c66b24c770644a884d4647","_id":"jsonresume-theme-cvstrap@0.0.3","_shasum":"17a1ba4a8519ea8cbf342bc9f059037e6a43636d","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"carlvlewis","email":"hello@carlvlew.is"},"maintainers":[{"name":"carlvlewis","email":"hello@carlvlew.is"}],"dist":{"shasum":"17a1ba4a8519ea8cbf342bc9f059037e6a43636d","tarball":"http://registry.npmjs.org/jsonresume-theme-cvstrap/-/jsonresume-theme-cvstrap-0.0.3.tgz"}}
+53 error new={"name":"jsonresume-theme-cvstrap","version":"0.0.3","description":"cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"repository":{"type":"git","url":"https://github.com/carlvlewis/cvStrap.git"},"author":{"name":"Carl V. Lewis","email":"hello@carlvlew.is","url":"https://github.com/carlvlewis"},"license":"MIT","bugs":{"url":"https://github.com/carlvlewis/cvStrap/issues"},"dependencies":{"handlebars":"^2.0.0-alpha.4"},"homepage":"https://github.com/carlvlewis/cvStrap","devDependencies":{},"keywords":["jsonresume"],"readme":"# cvStrap-jsonresume\u000acvStrap is a classic, clean, professional theme for the [JSONResume](https://github.com/jsonresume) schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.\u000a\u000a##### A [demo](http://cv.carlvlewis.net) of cvStrap in action.\u000a##### Working [documentation](http://carlvlewis.github.io/cvStrap/) for using cvStrap.\u000a\u000a### Further support/questions/contributions?\u000aShoot me an email at hello@carlvlew.is or tweet me at @[carlvlewis](http://twitter.com/carlvlewis). Any and all contributions welcome -- just issue a pull request!\u000a\u000a","readmeFilename":"README.md","gitHead":"bbdf24f3176d4415b1c66b24c770644a884d4647","_id":"jsonresume-theme-cvstrap@0.0.3","_shasum":"17a1ba4a8519ea8cbf342bc9f059037e6a43636d","_from":"jsonresume-theme-cvstrap@","_npmVersion":"1.4.28","_npmUser":{"name":"carlvlewis","email":"hello@carlvlew.is"},"maintainers":[{"name":"carlvlewis","email":"hello@carlvlew.is"}],"dist":{"shasum":"17a1ba4a8519ea8cbf342bc9f059037e6a43636d","tarball":"http://registry.npmjs.org/jsonresume-theme-cvstrap/-/jsonresume-theme-cvstrap-0.0.3.tgz"}}: jsonresume-theme-cvstrap
+53 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+53 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+53 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+53 error     at Request.emit (events.js:98:17)
+53 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+53 error     at Request.emit (events.js:117:20)
+53 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+53 error     at IncomingMessage.emit (events.js:117:20)
+53 error     at _stream_readable.js:944:16
+53 error     at process._tickCallback (node.js:442:13)
+54 error If you need help, you may report this *entire* log,
+54 error including the npm and node versions, at:
+54 error     <http://github.com/npm/npm/issues>
+55 error System Darwin 14.1.0
+56 error command "node" "/usr/local/bin/npm" "publish" "jsonresume-theme-cvstrap"
+57 error cwd /Users/carlvlewis/cvStrap
+58 error node -v v0.10.35
+59 error npm -v 1.4.28
+60 verbose exit [ 1, true ]
