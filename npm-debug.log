@@ -1,26 +1,71 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'init' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 silly package data undefined
-5 info init written successfully
-6 error Error: Invalid name: "npm publihs ./"
-6 error     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:315:15)
-6 error     at Object.module.exports.fixNameField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-6 error     at Array.forEach (native)
-6 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-6 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-6 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-6 error     at serverjs_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:176:43)
-6 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:172:33
-6 error     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:16:25)
-7 error If you need help, you may report this *entire* log,
-7 error including the npm and node versions, at:
-7 error     <http://github.com/npm/npm/issues>
-8 error System Darwin 14.0.0
-9 error command "node" "/usr/local/bin/npm" "init"
-10 error cwd /Users/carlvlewis/cvStrap
-11 error node -v v0.10.35
-12 error npm -v 1.4.28
-13 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/carlvlewis/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz
+12 verbose folder .
+13 info prepublish jsonresume-theme-cvstrap@0.0.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/carlvlewis/.npm/1f1177db-tar.lock
+16 silly lockFile a6a19314--theme-cvstrap-0-0-2-package-tgz tar:///Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz
+17 verbose lock tar:///Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz /Users/carlvlewis/.npm/a6a19314--theme-cvstrap-0-0-2-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile a6a19314--theme-cvstrap-0-0-2-package-tgz tar:///Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz
+21 silly lockFile a6a19314--theme-cvstrap-0-0-2-package-tgz tar:///Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package.tgz
+22 silly lockFile fc9363eb-sume-theme-cvstrap-0-0-2-package /Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package
+23 verbose lock /Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package /Users/carlvlewis/.npm/fc9363eb-sume-theme-cvstrap-0-0-2-package.lock
+24 silly lockFile fc9363eb-sume-theme-cvstrap-0-0-2-package /Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package
+25 silly lockFile fc9363eb-sume-theme-cvstrap-0-0-2-package /Users/carlvlewis/.npm/jsonresume-theme-cvstrap/0.0.2/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'jsonresume-theme-cvstrap',
+28 silly publish   version: '0.0.2',
+28 silly publish   description: 'cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.',
+28 silly publish   main: 'index.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/carlvlewis/cvStrap.git' },
+28 silly publish   author:
+28 silly publish    { name: 'Carl V. Lewis',
+28 silly publish      email: 'hello@carlvlew.is',
+28 silly publish      url: 'https://github.com/carlvlewis' },
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/carlvlewis/cvStrap/issues' },
+28 silly publish   dependencies: { handlebars: '^2.0.0-alpha.4' },
+28 silly publish   readme: '# cvStrap-jsonresume\ncvStrap is a classic, clean, professional theme for the [JSONResume](https://github.com/jsonresume) schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.\n\n##### A [demo](http://cv.carlvlewis.net) of cvStrap in action.\n##### Working [documentation](http://carlvlewis.github.io/cvStrap/) for using cvStrap.\n\n### Further support/questions/contributions?\nShoot me an email at hello@carlvlew.is or tweet me at @[carlvlewis](http://twitter.com/carlvlewis). Any and all contributions welcome -- just issue a pull request!\n\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '57127552f7449e5b8946981aaaa0dbf0b21f70fa',
+28 silly publish   homepage: 'https://github.com/carlvlewis/cvStrap',
+28 silly publish   _id: 'jsonresume-theme-cvstrap@0.0.2',
+28 silly publish   _shasum: '6fb46dd8de1d81721e38efbf2641051bddbc266f',
+28 silly publish   _from: '.' }
+29 error need auth auth and email required for publishing
+29 error need auth You need to authorize this machine using `npm adduser`
+30 error System Darwin 14.0.0
+31 error command "node" "/usr/local/bin/npm" "publish"
+32 error cwd /Users/carlvlewis/cvStrap
+33 error node -v v0.10.35
+34 error npm -v 1.4.28
+35 error code ENEEDAUTH
+36 verbose exit [ 1, true ]
