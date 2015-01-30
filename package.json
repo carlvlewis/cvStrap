@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-cvstrap",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "cvStrap is a classic, clean, professional theme for the JSONResume schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.",
   "main": "index.js",
   "scripts": {
