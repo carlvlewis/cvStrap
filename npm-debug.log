@@ -31,27 +31,27 @@
 16 silly addNameRange { name: 'jsonresume-theme-cvstrap', range: '*', hasData: false }
 17 verbose request where is /jsonresume-theme-cvstrap
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id d645453bec37c6ba
+19 verbose request id b6d93ce33a2bcb1f
 20 verbose url raw /jsonresume-theme-cvstrap
 21 verbose url resolving [ 'https://registry.npmjs.org/', './jsonresume-theme-cvstrap' ]
 22 verbose url resolved https://registry.npmjs.org/jsonresume-theme-cvstrap
 23 verbose request where is https://registry.npmjs.org/jsonresume-theme-cvstrap
-24 info trying registry request attempt 1 at 01:54:17
+24 info trying registry request attempt 1 at 03:23:20
 25 verbose etag "3SMY2D3GWF013RUCPU33WS6J0"
 26 http GET https://registry.npmjs.org/jsonresume-theme-cvstrap
 27 http 304 https://registry.npmjs.org/jsonresume-theme-cvstrap
 28 silly registry.get cb [ 304,
-28 silly registry.get   { date: 'Fri, 30 Jan 2015 06:54:19 GMT',
+28 silly registry.get   { date: 'Fri, 30 Jan 2015 08:23:21 GMT',
 28 silly registry.get     server: 'Apache',
 28 silly registry.get     via: '1.1 varnish',
-28 silly registry.get     'last-modified': 'Fri, 30 Jan 2015 06:54:19 GMT',
+28 silly registry.get     'last-modified': 'Fri, 30 Jan 2015 08:23:21 GMT',
 28 silly registry.get     'cache-control': 'max-age=60',
 28 silly registry.get     etag: '"3SMY2D3GWF013RUCPU33WS6J0"',
-28 silly registry.get     age: '39',
-28 silly registry.get     'x-served-by': 'cache-iad2138-IAD',
-28 silly registry.get     'x-cache': 'HIT',
-28 silly registry.get     'x-cache-hits': '1',
-28 silly registry.get     'x-timer': 'S1422600859.160505,VS0,VE0',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-atl6233-ATL',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1422606201.355751,VS0,VE317',
 28 silly registry.get     vary: 'Accept',
 28 silly registry.get     'content-length': '0',
 28 silly registry.get     'keep-alive': 'timeout=10, max=50',
@@ -98,20 +98,20 @@
 45 verbose url resolving [ 'https://registry.npmjs.org/', './jsonresume-theme-cvstrap' ]
 46 verbose url resolved https://registry.npmjs.org/jsonresume-theme-cvstrap
 47 verbose request where is https://registry.npmjs.org/jsonresume-theme-cvstrap
-48 info trying registry request attempt 1 at 01:54:17
+48 info trying registry request attempt 1 at 03:23:21
 49 http PUT https://registry.npmjs.org/jsonresume-theme-cvstrap
 50 http 403 https://registry.npmjs.org/jsonresume-theme-cvstrap
-51 verbose headers { date: 'Fri, 30 Jan 2015 06:54:20 GMT',
+51 verbose headers { date: 'Fri, 30 Jan 2015 08:23:22 GMT',
 51 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 51 verbose headers   'content-type': 'application/json',
 51 verbose headers   'cache-control': 'max-age=60',
 51 verbose headers   'content-length': '3353',
 51 verbose headers   'accept-ranges': 'bytes',
 51 verbose headers   via: '1.1 varnish',
-51 verbose headers   'x-served-by': 'cache-iad2125-IAD',
+51 verbose headers   'x-served-by': 'cache-atl6222-ATL',
 51 verbose headers   'x-cache': 'MISS',
 51 verbose headers   'x-cache-hits': '0',
-51 verbose headers   'x-timer': 'S1422600859.411376,VS0,VE1041',
+51 verbose headers   'x-timer': 'S1422606202.016594,VS0,VE846',
 51 verbose headers   'keep-alive': 'timeout=10, max=50',
 51 verbose headers   connection: 'Keep-Alive' }
 52 error publish Failed PUT 403
