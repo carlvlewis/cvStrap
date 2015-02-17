@@ -180,8 +180,8 @@ function Person(data) {
             proskey.push({keywordpro : data.professional_affiliations[i].keywords[j]});
         }
         pros.push({ 
-            profname: data.skills[i].name, 
-            proflevel: data.skills[i].level,
+            profname: data.professional_affiliations[i].name, 
+            proflevel: data.professional_affiliations[i].level,
             profkey: ko.observableArray(proskey)
         });
     

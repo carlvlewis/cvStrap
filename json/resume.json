@@ -270,7 +270,7 @@
     {
       "company": "The Telegraph & macon.com",
       "position": "Metro intern, weekend cops reporter",
-      "website": "",
+      "website": "http://macon.com",
       "startDate": "May 2009",
       "endDate": "Dec. 2010",
       "summary": "",
@@ -361,7 +361,7 @@
   ],
   "professional_affiliations": [
     {
-      "name": "",
+      "name": "Organizations/Institutions",
       "level": "",
       "keywords": [
         "NICAR (National Institute for Computer Assisted Reporting)",
@@ -460,7 +460,7 @@
         "Data Scraping: R, Python, Kimono, Beautiful Soup."
       ]
     },
-        {   "name": "Digital Meda",
+        {   "name": "Digital Media",
 	    "level": "Proficient", 
         "keywords": [
          
