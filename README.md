@@ -1,5 +1,6 @@
 # cvStrap
-###for JSON-Resume
+## JSON-Resume Theme
+
 cvStrap is a classic, clean, professional theme for the [JSONResume](https://github.com/jsonresume) schema with print-ready and responsive stylesheets, based on Bootstrap 2.0.
 
 ##### A [demo](http://cv.carlvlewis.net) of cvStrap in action.
